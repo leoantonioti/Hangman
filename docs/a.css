@@ -1,0 +1,124 @@
+
+/* Corpo do projeto */ 
+body{
+    background-color: #1e1f26; 
+    font-family: "Montserrat", sans-serif; 
+    color: #03dac6;
+}
+
+/* Barra de navegação */ 
+.navbar{
+    background-color: #1e1f26;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    justify-content: space-between; 
+    padding: 25px; 
+    box-shadow: 0px 1px 80px rgba(0, 0, 0, 0.795);
+    border-style:  groove hidden ridge;
+    border-color: #03dac55b;
+}
+
+/* Links da Barra de navegação */
+.navbar a{
+    text-decoration: none; 
+    color: #03dac6;
+    text-shadow: 8px 10px 10px rgba(0, 0, 0, 0.717);
+    font-weight: bold;
+}
+
+/* Hover Style Barra de Navegação */
+.navbar a:hover{
+    color: #ff0266;
+    font-size: 27px;
+   
+}
+
+/* Foto de Perfil */
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+/* Dimensionamento Foto de Perfil */
+img{
+    border-radius: 50%;
+    transform: scale(0.8);
+    box-shadow: 0px 9px 40px #000000;
+}
+
+/* Nome e Subtitulo */ 
+.nome{
+    margin-top: 0px;
+    text-align: center;
+    text-shadow: 8px 10px 10px rgba(0, 0, 0, 0.717);
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+/* Icones c/ Links de Contato (Insta,Git,Wpp e LinkedIn) */
+.contatos{
+    text-align: center;
+}
+
+/* Aba de Dados Pessoais */ 
+.dadospessoais{
+    box-shadow: 0px 30px 30px #000000;
+    padding: 45px;
+    border-style: outset;
+    border-color: #03dac6;
+    margin-bottom: 30px;
+}
+
+/* Aba de Dados Profissionais */ 
+.experprofissional{
+    box-shadow: 0px 30px 30px #000000;
+    padding: 45px;
+    border-style: outset;
+    border-color: #03dac6;
+    margin-bottom: 30px;
+}
+
+/* Aba de Formação Acadêmica */ 
+.escolar{
+    box-shadow: 0px 30px 30px #000000;
+    padding: 45px;
+    border-style: outset;
+    border-color: #03dac6;
+    margin-bottom: 30px;
+}
+
+/* Aba de Comp e Habilidades */ 
+.skill{
+    box-shadow: 0px 30px 30px #000000;
+    padding: 45px;
+    border-style: outset;
+    border-color: #03dac6;
+    margin-bottom: 30px;
+}
+
+/* Aba sobre mim */
+.sobremim{
+    box-shadow: 0px 30px 30px #000000;
+    padding: 45px;
+    border-style: outset;
+    border-color: #03dac6;
+    margin-bottom: 30px;
+}
+
+
+/* Estilização do icone que linka ao topo */
+i{
+    color: #03dac6;
+    font-size: 30px;
+    display: inline;
+    padding: 10px;
+}
+
+/* Hover Style no icone que linka ao topo */
+i:hover{
+    color: #ff0266;
+    font-size: 39px;
+}
