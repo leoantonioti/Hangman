@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300;400;500&display=swap');
+
+ /* Reset nas configurações do css */
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    width: 100vw; /* Largura */
+    height: 90vh; /* Altura */
+    margin-top: 10px;
+    background-color: #1e1f26  ;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#imagem{ 
+    background-image: url("../img/forca.png");
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat; /* Impede que a imagem da minha forca se repita */
+}
+
+#palavra-secreta{
+    
+}
+
