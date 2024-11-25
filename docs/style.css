@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    caret-color: transparent;
+}
+
+.roll {
+    width: 3.125rem;
+    height: 3.125rem; 
+    background-color: #ffffff;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0,0,0,0.3) 0px 8px  16px -8px; 
+
+}
+
+.roll:hover {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: black;
+    color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0,0,0,0.3) 0px 8px  16px -8px; 
+}
+
+.btn{
+    border: 1px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0,0,0,0.3) 0px 8px  16px -8px; 
+}
+
+.bgColor{
+    background-color: rgb(162, 161, 161) ;
+}
+
+
+  

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Dado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
+</head>
+<body>
+    <div class="my-5" id="sectionFirst">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center" style="min-height: 400px;">
+                    <img src="img/dados.png" alt="fotodado" class="img-fluid" style="max-width: 100%; height: auto; margin-top: 80px;">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex flex-column align-items-center">
+                        <h1 class="fw-bolder display-1 text-nowrap text-center">JOGO DOS DADOS</h1>
+
+                        <div class="mb-4">
+                            <label for="playerName" class="form-label">Digite seu nome</label>
+                            <input type="text" class="form-control" id="playerName" placeholder="Nome do jogador" required>
+                        </div>
+                        <button type="button" class="btn btn-dark px-md-5 px-sm-2 text-end" id="playNow">Iniciar Jogo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5" id="sectionSecond" style="display: none;">
+        <div class="container p-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-7">
+                    <div>
+                        <h1 class="display-2 fw-bolder ps-3" id="Score">0</h1>
+                        <p>Pontuação Total</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5">
+                    <h5 class="text-danger mb-2 text-end" id="warning">Você Não Selecionou nenhum numero</h5>
+
+                    <div class="d-flex align-items-center justify-content-between py-1">
+                        <button type="button" class="btn p-3 fs-md-4 roll" value="1">1</button>
+                        <button type="button" class="btn p-3 fs-md-4 roll" value="2">2</button>
+                        <button type="button" class="btn p-3 fs-md-4 roll" value="3">3</button>
+                        <button type="button" class="btn p-3 fs-md-4 roll" value="4">4</button>
+                        <button type="button" class="btn p-3 fs-md-4 roll" value="5">5</button>
+                        <button type="button" class="btn p-3 fs-md-4 roll" value="6">6</button>
+                    </div>
+                    <h4 class="text-end mt-3">Selecione um número</h4>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <img src="img/dado_1.png" alt="dado1" id="Dice">
+                <h5>Clique no dado para rodar</h5>
+                <button type="button" class="btn btn-light px-md-5 px-sm-2 border my-2" id="resetScore">Resetar Pontuação</button>
+                <button type="button" class="btn btn-dark px-md-5 px-sm-2 mt-1" id="showRules">Mostrar Regras</button>
+                <div id="Show" class="mt-5">
+                </div>
+            </div>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
