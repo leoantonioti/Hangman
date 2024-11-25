@@ -1,2 +1,2 @@
-# Hangman
-a hangman game in HTML/CSS/BOOTSTRAP/JAVASCRIPT
+# Jogo dos Dados
+Jogo dos Dados desenvolvido em CSS / HTML / JAVASCRIPT E BOOTSTRAP 
