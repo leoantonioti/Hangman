@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=poppins&display=swap'); 
 
-* {
-    margin: 0;
+* { 
+/* Reseta a largura e dimensão de alguns itens */ 
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
-    caret-color: transparent;
+    caret-color: transparent; /* Remove um icone de editor de texto que ficou aparecendo. */ 
 }
 
 .roll {
@@ -30,11 +31,13 @@
 .btn{
     border: 1px solid;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0,0,0,0.3) 0px 8px  16px -8px; 
-}
+} /* Adiciona box shadow nos botões da minha pagina */ 
 
 .bgColor{
     background-color: rgb(162, 161, 161) ;
-}
+} /* altera o background ao clicar em mostrar regras */ 
+
+
 
 
   

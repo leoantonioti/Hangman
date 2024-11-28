@@ -1,5 +1,4 @@
 // Faz com que minhas duas sessão fiquem separadas em telas diferentes. (Sessão Login e Sessão Jogo)
-
 window.addEventListener('load', (e) => {
     sectionFirst.style.display = 'block'; 
     sectionSecond.style.display = 'none'; 
@@ -21,8 +20,6 @@ let computerDice = null;
 let MyDice = null; 
 let points = 0; 
 
-
-
 // Faz a transição entre a primeira tela (Login e Inicio de Jogo e a tela do Jogo em si)
 playNow.addEventListener('click', function(){
     sectionFirst.style.display = 'none'; 
@@ -40,15 +37,24 @@ showRules.addEventListener('click',()=> {
                         Se errar, você perde 2 pontos! </p>
                     </div>
     `
+// Rola para a parte de regras
+document.getElementById('Show').scrollIntoView({
+        behavior: 'smooth', // Rolar suavemente
+        block: 'start'      // Rolar até o topo do elemento
+    });
 }); 
 
 // Função para esconder as regras do jogo 
 function hideRules() {
     Show.innerHTML = ''; 
+    sectionFirst.scrollIntoView({
+        behavior: 'smooth', // Rolar suavemente
+        block: 'start'      // Rolar até o topo da seção
+    });
 }; 
 
-// Função para resetar todos os jogos e os pontos ao clicar no Botão Reset 
 
+// Função para resetar todos os jogos e os pontos ao clicar no Botão Reset 
 resetScore.addEventListener("click", function(){
     sectionFirst.style.display = 'block'; 
     sectionSecond.style.display = 'none'; 
@@ -63,7 +69,6 @@ MyDice = this.getAttribute('value') ;
 warning.style.display = 'none'; 
 console.log(`myDice : ${MyDice}`)
 }); 
-
 }); 
 
 
@@ -80,7 +85,6 @@ Dice.addEventListener("click", function(){
         warning.style.display = 'block'; 
         return; 
     }
-
 }); 
 
 // Função para mostrar o Score
@@ -90,8 +94,8 @@ function ScoreCard() {
     }
     else{
         points -= 2; 
+        alert("Errou!");
     }
-
     Score.innerText =  `${points}`;
     MyDice = null; 
     computerDice = null; 

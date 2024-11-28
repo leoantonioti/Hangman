@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,40 +12,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
 </head>
 <body>
-    <div class="my-5" id="sectionFirst">
+    <header class="bg-dark text-white text-center py-2">
+        <p class="small mb-0">Jogue com moderação e tente não se estressar!</p>
+    </header>
+    <div class="my-5" id="sectionFirst"> 
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-md-6 d-flex justify-content-center align-items-center" style="min-height: 400px;">
                     <img src="img/dados.png" alt="fotodado" class="img-fluid" style="max-width: 100%; height: auto; margin-top: 80px;">
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="d-flex flex-column align-items-center">
-                        <h1 class="fw-bolder display-1 text-nowrap text-center">JOGO DOS DADOS</h1>
-
-                        <div class="mb-4">
+                <div class="col-12 col-lg-6"> <!-- Col 12 Faz com que ocupe toda tela em dispotivos moveis e a 
+                    col-lg-6 faz com que ocupe 50% da tela em dispositivos grandes -->
+                    <form class="d-flex flex-column align-items-center">
+                        <h1 class="fw-bolder display-1 text-nowrap text-center mb-4">JOGO DOS DADOS</h1>
+                        <div class="mb-3 w-100"> <!-- width 100 pra ocupar toda largura horizontal do meu container -->
                             <label for="playerName" class="form-label">Digite seu nome</label>
                             <input type="text" class="form-control" id="playerName" placeholder="Nome do jogador" required>
                         </div>
-                        <button type="button" class="btn btn-dark px-md-5 px-sm-2 text-end" id="playNow">Iniciar Jogo</button>
-                    </div>
+                        <div class="mb-4 w-100"> <!-- width 100 pra ocupar toda largura horizontal do meu container -->
+                            <label class="form-label">Selecione a Dificuldade</label>
+                            <div class="d-flex justify-content-between">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="easy" value="easy">
+                                    <label class="form-check-label" for="easy">Fácil</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="medium" value="medium">
+                                    <label class="form-check-label" for="medium">Médio</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="difficulty" id="hard" value="hard">
+                                    <label class="form-check-label" for="hard">Difícil</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 w-100"> <!-- width 100 pra ocupar toda largura horizontal do meu container -->
+                            <label for="university" class="form-label">Selecione sua Universidade</label>
+                            <select class="form-select" id="university" required>
+                                <option value="">Escolha uma Universidade</option>
+                                <option value="Positivo">Positivo</option>
+                                <option value="UEL">UEL</option>
+                                <option value="Unifil">Unifil</option>
+                                <option value="Pitágoras">Pitágoras</option>
+                                <option value="Unopar">Unopar</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-dark px-md-5 px-sm-2 text-end" id="playNow">Iniciar Jogo</button> <!-- padding x medium para telas medias 
+                        e padding x small para telas pequenas, para ajustar a resolução -->
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="my-5" id="sectionSecond" style="display: none;">
+   <div class="mt-0 mb-0 p-0" id="sectionSecond" style="display: none;"> <!-- Display none faz com que ao abrir a pagina
+        a segunda seção só seja liberada ao clicar em Jogar agora -->
         <div class="container p-5">
             <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-7"> 
                     <div>
-                        <h1 class="display-2 fw-bolder ps-3" id="Score">0</h1>
+                        <h1 class="display-2 fw-bolder ps-3" id="Score">0</h1>  <!-- padding start 3 adiciona o padding 
+                        do lado esquerdo meu elemento -->
                         <p>Pontuação Total</p>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-5">
-                    <h5 class="text-danger mb-2 text-end" id="warning">Você Não Selecionou nenhum numero</h5>
-
+                    <h5 class="text-danger mb-2 text-end" id="warning">Você não selecionou nenhum número!</h5>
                     <div class="d-flex align-items-center justify-content-between py-1">
                         <button type="button" class="btn p-3 fs-md-4 roll" value="1">1</button>
                         <button type="button" class="btn p-3 fs-md-4 roll" value="2">2</button>
@@ -62,7 +93,7 @@
                 <h5>Clique no dado para rodar</h5>
                 <button type="button" class="btn btn-light px-md-5 px-sm-2 border my-2" id="resetScore">Resetar Pontuação</button>
                 <button type="button" class="btn btn-dark px-md-5 px-sm-2 mt-1" id="showRules">Mostrar Regras</button>
-                <div id="Show" class="mt-5">
+                <div id="Show" class="mt-0">
                 </div>
             </div>
         </div>
